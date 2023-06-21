@@ -1,0 +1,685 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  line-height: 0.8;
+}
+a{
+  text-decoration: none;
+}
+ul,ol{
+  list-style: none;
+}
+
+/* .banner {
+    background-image: url(../images/counter-background-2.jpg);
+    background-size: cover;
+    height: 1500px;            
+                      Adjust this value to fit your design
+    position: relative;
+    background-color: #f7efda;
+    padding: 150px 0;
+  }
+  
+  .image {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: height 1s ease;
+  }
+   */
+   /* =========== NAVBAR CSS STARTS===================  */
+   .navbar{
+    background-color: #F7EFDA !important;
+   
+   }
+   .navbar-brand{
+    width: 150px;
+    height: 70px;
+   }
+   .navbar-brand img{
+      max-width: 100%;
+      object-fit: cover;
+   }
+   .navbar-nav{
+    gap: 40px;
+   }
+   .nav-item{
+    position: relative;
+    text-transform: uppercase; 
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+   }
+   .nav-item a{
+    color: #94C4F7 !important;
+   }
+   	.nav-item:hover a{
+      color: #244263 !important;
+    }
+   	.nav-item:hover .dropdown-menu>li>a{
+      color: #b9c3cd !important;
+      text-transform: capitalize;
+    }
+   .dropdown-menu{
+    background-color: #244263;
+    position: absolute;
+    left: -10px;
+    top: 100px;
+    width: 200px;
+    padding: 10px 15px;
+    transition: all linear 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.nav-item:hover .dropdown-menu{
+    visibility: visible;
+    top: 80px;
+    opacity: 1;   
+}
+.dropdown-menu>li>a{
+  color: #b9c3cd !important;
+  text-transform: capitalize;
+}
+.nav-link::after{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #244263;
+  left: 50%;
+  bottom:-10px;
+  transform: translateX(-50%);
+  transition: all linear 0.3s;
+  opacity: 0;
+}
+.nav-item:hover .nav-link::after{
+  opacity: 1;
+}
+
+.navbar__cart i, .navbar__search i{
+  margin-top: 10px !important;
+}
+.navbar-nav .navbar__cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #FF9167;
+}
+
+.navbar__cart i{
+  color: #fff ;
+  font-size: 20px;
+}
+.navbar__search i{
+  color: #94C4F7 ;
+}
+   /* =========== NAVBAR CSS ENDS=================== */
+   /* =========== BANNER CSS STARTS===================  */
+
+   #banner{
+    background: url(../images/banner.png) no-repeat center/cover;
+    padding: 50px 0 100px 0;
+    background-color: #F7EFDA;
+   }
+   .banner__left{
+    position: relative;
+   }
+   .banner__img__parallax{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: -600px;
+    width: 100%;
+    transition: height 1s ease;
+   }
+   .banner__img{
+    height: 450px;
+   }
+   .banner__img img{
+    max-height: 100%;
+    object-fit: cover;
+   }
+   .banner__img__title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #244262;
+    padding-left: 60px;
+   }
+   .banner__right{
+    padding-bottom: 100px;
+   }
+   .banner__head{
+    padding-top: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #244262
+   }
+   .banner__head__1p{
+    width: 400px;
+    padding-top: 30px;
+    color: #848484;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'PT Sans', sans-serif;
+   }
+   .banner__head__2p{
+    width: 500px;
+    padding: 15px 0;
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'PT Sans', sans-serif;
+   }
+   .banner__btn{
+    background-color: #94C4F7;
+    color: #fff;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.95px;
+   }
+   .banner__bot__head{
+    margin-top: 100px;
+   }
+   .homegrown__head__top{
+    font-size: 16px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+    line-height: 19.5px;
+    color: #244262;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+   }
+   .homegrown__head__star{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+    line-height: 19.5px;
+    color: #244262;
+    font-size: 20px;
+   }
+   .homegrown__head{
+    padding-top: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #244262;
+   }
+   .homegrown__p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #848484;
+    width: 700px;
+    margin: 30px 0 80px 200px;
+   }
+
+   .homegrown__item__img{
+      width: 347px;
+      height: 230px;
+   }
+   .homegrown__item__img img{
+    max-width: 100%;
+    
+    object-fit: cover;
+   }
+   .homegrown__item__head{
+    margin-top: 20px;
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    text-transform: initial;
+    color: #244262;
+    font-size: 24px;
+    line-height: 28px;
+   }
+   .homegrown__item__p{
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #848484;
+   }
+   .bot_top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    background-color: #EACE50;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+   /* =========== BANNER CSS ENDS=================== */
+   /* =========== Nature CSS STARTS===================  */
+   #nature{
+    background: url(../images/nature.jpg) no-repeat center/cover;
+    padding: 100px 0 320px 0;
+   }
+   .nature__head{
+    font-family: "Abril Fatface";
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+   }
+   .nature__p{
+    margin: 30px 0 50px 300px;
+    width: 560px;
+    font-family: "PT Sans";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 19px;
+   }
+   .nature__item__wrap{
+    position: relative;
+   }
+  .orange{
+    position: absolute;
+    bottom: -250px;
+    left: -41px; 
+    transform: translateY(50%);
+    transition: left 0.8s ease;
+  }
+.lemons{
+    position: absolute;
+    bottom: -292px;
+    left: 617px;
+    /* transform: translateX(-50%); */
+    transition: left 0.8s ease;
+  }
+.almonds{
+    position: absolute;
+    top: -28px;
+    left: 425px;
+    transform: translateY(-10%);
+    transition: top 0.8s ease;
+  }
+  .flex__seed{
+    position: absolute;
+    bottom: -210px;
+    left: 130px;
+  }
+ .bohnen{
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+.cocoa{
+    position: absolute;
+    right: 15px;
+    bottom: -277px;
+
+  }
+   /* =========== Nature CSS ENDS=================== */
+   /* =========== ORGANIC CSS STARTS===================  */
+   #organic{
+    background: url(../images/organic-banner.jpg) no-repeat center/cover;
+    padding: 100px 0;
+   }
+   .organic__right{
+    margin: 35px 0;
+    width: 565px;
+   }
+   .organic__left{
+    margin: 35px 0 35px 60px;
+    padding: 90px 0;
+    width: 425px;
+   }
+   .organic__head{
+    padding: 25px 0;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #244262;
+   }
+   .organic__head__p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #848484;
+    
+   }
+   .organic__item__head{
+    margin: 35px 0 20px 0;
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    text-transform: initial;
+    color: #244262;
+    font-size: 24px;
+    line-height: 28px;
+   }
+   .organic__item__p{
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #848484;
+   }
+   .organic__img{
+    width: 565px;
+    height: 738px;
+
+   }
+   .organic__img img{
+    max-width: 100%;
+    object-fit: cover;
+   }
+   /* =========== ORGANIC CSS ENDS=================== */
+   /* =========== Countdown CSS STARTS===================  */
+   #countdown{
+    background: url(../images/countdown.jpg) no-repeat center/cover;
+    padding: 70px 0;
+   }
+   .countdown__item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .countdown__no{
+    font-family: "Abril Fatface",serif;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+   }
+   .countdown__detail{
+    font-family: "Abril Fatface",serif;
+    color: #fff;
+    margin: 0;
+    text-transform: capitalize;
+   }
+   /* =========== Countdown CSS ENDS=================== */
+   /* =========== DISCOUNT CSS STARTS===================  */
+   #discount{
+    padding: 115px 0;
+    background-color: #F7EFDA;
+   }
+   .discount__head{
+    padding-top: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #244262;
+    text-align: center;
+   }
+   .discount__p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #848484;
+    text-align: center;
+    width: 700px;
+    margin: 30px 0 80px 200px;
+   }
+   .discount__item{
+    width: 260px;
+    height: 488px;
+    background-color: #e9f3ff;
+   }
+   .discount__item__img{
+    position: relative;
+    width: 260px;
+   }
+   .discount__item__img img{
+    max-width: 100%;
+    object-fit: cover;
+   }
+   .percentage{
+    position: absolute;
+    background-color: #244263;
+    color: #fff;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 22px;
+    line-height: 1;
+    padding: 19px 15px 23px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   .discount__product{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #244262;
+    text-align: center;
+   }
+   .new__price{
+    color: #FF9167;
+   }
+   .price{
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #244262;
+    text-align: center;
+   }
+   .discount__star{
+    color: #244263;
+    font-size: 14px;
+    margin-left: 80px;
+   }
+  .discount__icon__wrap{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .discount__icon1,.discount__icon2,.discount__icon3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+  }
+  .discount__icon1{
+    background-color: #244262;
+    color: #fff;
+  }
+  .discount__icon2{
+    background-color: #73B6FE;
+    color: #fff;
+  }
+  .discount__icon3{
+    background-color: #FF9167;
+    color: #FFF7E6;
+  }
+#discount__timer{
+  margin-top: 20px;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.timer-box {
+  padding: 12px 0;
+  width: 64px;
+  text-align: center;
+  background-color: #94c4f7;
+  font-family: "PT Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+   /* =========== DISCOUNT CSS ENDS=================== */
+   /* =========== Instagram CSS STARTS===================  */
+#insta{
+  padding: 50px 0 80px 0;
+  background: #F7EFDA;
+}
+   .insta__head{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #244262;
+    text-align: center;
+   }
+   .insta__p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: #848484;
+    text-align: center;
+    width: 500px;
+    margin: 30px 0 80px 300px;
+   }
+   .insta__icon i{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      line-height: 50px;
+      text-align: center;
+      background-color: #333333;
+      color: #fff;
+      font-size: 24px;
+   }
+   .insta__icon__title{
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    text-transform: initial;
+    color: #244262;
+    font-size: 16px;
+   }
+   .shots_item{
+    width: 15%;
+    height: 162px;
+    overflow: hidden;
+    /* overflow hidden will make the picture stay inside the full div height */
+} 
+.shots_wrapper{
+  margin-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.lightbox .lb-image{
+width: 500px!important;
+height: 500px !important;
+}
+
+.shots_item img{
+   width: 100%;
+   height: 100%;
+    object-fit: cover;
+    transition: all linear 0.3s;
+}
+.insta__btn{
+  background-color: #359DFF;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+
+}
+.insta__btn__text{
+  width: 116px;
+  
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px ;
+  line-height: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+   /* =========== Instagram CSS ENDS=================== */
+   /* =========== Footer CSS STARTS===================  */
+   #footer{
+    background: url(../images/footer-bg-img.jpg) no-repeat center/cover ;
+    padding: 120px 0;
+   }
+   .footer__item{
+    text-align: center;
+   }
+   .footer__item__head{
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 25px 0;
+   }
+   .footer__item__head2{
+    width: 340px;
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    color: #244262;
+    font-size: 40px;
+    line-height: 1.1em;
+   }
+   .footer__item__p{
+      font-family: "PT Sans",sans-serif;
+      font-size: 16px;
+      line-height: 1.5em;
+      font-weight: 400;
+      color: #fff;
+   }
+   .footer__bottom{
+    font-family: "PT Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #73B6FE;
+    background: #244263;
+    padding: 20px 0;
+    text-align: center;
+   }
+   /* =========== Footer CSS ENDS=================== */
+
+
+   /* font-family: 'Abril Fatface', cursive;
+font-family: 'Euphoria Script', cursive;
+font-family: 'Overpass', sans-serif;
+font-family: 'PT Sans', sans-serif; */

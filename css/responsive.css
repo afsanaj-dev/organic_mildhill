@@ -1,0 +1,246 @@
+@media(max-width:575.98px){
+        /* ======navbar starts */
+        .nav__logo{
+            width: 120px;
+        }
+        .navbar-brand{
+            width: 110px;
+            height: 50px;
+           }
+        .navbar-nav{
+            text-align: right;
+            gap: 2px;
+            padding-right: 10px;
+           
+        }
+            .nav-link{
+            font-size: 12px;
+        }
+        .nav-item a,.navbar__search i{
+         color: #244263 !important;
+           }
+    .dropdown-menu{
+        display: none;
+
+    }
+    .navbar-nav .navbar__cart{
+        display: none;
+      }
+        /* ==========NAvbar ends======= */
+        /* ==================BANNER======= */
+        .banner__img__parallax{
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: -580px;
+            transition: height 1s ease;
+           }
+
+.banner__right{
+    margin-top: 280px;
+}
+.banner__img{
+    height: 250px;
+   }
+   .banner__img__title{
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 45px
+   }
+   .banner__head{
+    font-size: 45px;
+   }
+   .banner__head__1p{
+    font-size: 16px;
+   }
+   .banner__head__2p{
+    width: 330px;
+    font-size: 13px;
+   }
+   .banner__btn{
+    padding: 10px 19px;
+    font-size: 18px;
+   }
+   .banner__right{
+    padding-bottom: 0;
+   }
+   .banner__bot__head{
+    margin-top: 0;
+   }
+   .homegrown__head__top {
+    font-size: 14px;
+    padding-bottom: 0;
+   }
+   .homegrown__head__star{
+    font-size: 15px;
+   }
+   .homegrown__head{
+    padding-top: 5px;
+    font-size: 50px;
+   }
+   .homegrown__p{
+    font-size: 14px;
+    width: 320px;
+    text-align: center;
+    margin: 30px 0;
+   }
+   .homegrown__item__img {
+    width: 338px;
+    height: 225px;
+  }
+  .homegrown__item__head {
+    margin-top: 16px;
+    font-size: 22px;
+  }
+  .homegrown__item__p{
+    font-size: 14px;
+  }
+  .bot_top{
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    background-color: #EACE50;
+    line-height: 40px;
+    font-size: 16px;
+}
+  /* ==========NATURE=============== */
+  .nature__head {
+    font-size: 44px;
+  }
+  .nature__p {
+    margin: 30px 0;
+    width: 350px;
+    font-size: 16px;
+  }
+  .lemons{
+    display: none;
+  }
+.almonds{
+    display: none;
+  }
+  .flex__seed{
+    display: none;
+  }
+  .bohnen{
+    position: absolute;
+    right: -37px;
+    top: -35px;
+  }
+.cocoa{
+display: none;
+  }
+  /* ============ORGANIC========== */
+  .organic__left{
+    margin: 0 0 0 5px;
+    padding: 0;
+  }
+  .organic__head{
+    padding: 5px 0;
+    font-size: 44px;
+  }
+.organic__head__p{
+    font-size: 17px;
+    width: 350px;
+}
+.organic__item__head {
+    margin: 20px 0 15px 0;
+    font-size: 22px;
+  }
+  .organic__item__p{
+    width: 348px;
+    font-size: 14px;
+
+   }
+   .organic__img {
+    width: 334px;
+    height: 400px;
+  }
+  #organic{
+    padding: 80px 0 40px 0;
+   }
+  /* ===========COuntDown=========== */
+
+  #countdown{
+    padding: 40px 0;
+   }
+   .countdown__no{
+    font-size: 54px;
+   }
+   /* ==========DIScount========= */
+   #discount{
+    padding: 60px 0;
+   }
+   .discount__head{
+    font-size: 36px;
+   }
+   .discount__p{
+    font-size: 14px;
+    width: 320px;
+    text-align: center;
+    margin: 10px 0 10px 10px;
+   }
+   .discount__item__img {
+    width: 231px;
+  }
+  .percentage{
+    padding: 13px 12px 16px 12px;
+    right: -29px;
+  }
+  .discount__item{
+    height: 460px;
+    margin-top: 15px;
+    margin-left: 35px;
+   }
+   /* ===========INSTA========= */
+   #insta{
+    padding: 0 0 80px 0;
+  }
+   .insta__head{
+    font-size: 33px;
+   }
+   .insta__p{
+    font-size: 16px;
+    width: 350px;
+    margin: 20px 0 40px 10px;
+   }
+.insta__icon i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.shots_item{
+    width: 20%;
+    height: 60px;
+    overflow: hidden;
+    /* overflow hidden will make the picture stay inside the full div height */
+} 
+.shots_wrapper{
+    margin-left: 20px;
+      padding-top: 40px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+  }
+  .lightbox .lb-image{
+    width: 300px!important;
+    height: 300px !important;
+    }
+    .insta__btn__text{
+        width: 100px;
+        font-size: 13px ;
+        line-height: 14px;
+      }
+      /* ===========FOOTER======== */
+      #footer{
+        padding: 60px 0;
+       }
+       .footer__item__head2 {
+        margin-top: 20px;
+        font-size: 31px;
+      }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+}
